@@ -147,4 +147,4 @@ function showHelp(){
 
     }, 3000); 
 }
-helpBox.style.display="none"
+
