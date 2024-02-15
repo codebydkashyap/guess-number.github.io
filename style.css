@@ -110,6 +110,9 @@ html {
       background-color: #d76a6a;
       border-radius: 10px;
     }
+    body{
+      background-image: url('boliviainteligente-LvNtIgxFb_4-unsplash.jpg');
+    }
     #congrats {
       display:none;
       width: 340px;
