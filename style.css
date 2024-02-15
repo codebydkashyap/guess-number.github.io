@@ -157,7 +157,7 @@ html {
   }
 
   .congrats {
-    display: block;
+    display: none;
     width: 29vmax;
     height: 43vmax;
     align-items: center;
