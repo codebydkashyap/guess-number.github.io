@@ -62,14 +62,14 @@ function checkGuess ( guess){
     }
     else if( guess <randomNum){
         helpBox.style.display="block"
-        helpTExt.innerHTML="TOO LOW KEEP TRYING !"
+        helpTExt.innerHTML="Your num is LOW KEEP TRYING !"
         showHelp();
         displayMsg(` num is TOO low `)
         
     }
     else if( guess >randomNum){
         helpBox.style.display="block"
-        helpTExt.innerHTML="TOO LOW KEEP TRYING !"
+        helpTExt.innerHTML="Your num is HIGH KEEP TRYING !"
         showHelp();
         displayMsg(` num is TOO high `)
         
