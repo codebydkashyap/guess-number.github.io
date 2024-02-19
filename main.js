@@ -38,11 +38,11 @@ function validateGuess (guess){
     }
     else {
         prevGuess.push(guess);
-        if(numGuess==10){
+        if(numGuess==9){
             cleanUpGuess(guess)
             displayMsg(`Game over random num was ${randomNum}`)
             endGame();
-            
+             userInput.style.display="none"
         }else {
             cleanUpGuess(guess)
             checkGuess(guess);
@@ -62,14 +62,14 @@ function checkGuess ( guess){
     }
     else if( guess <randomNum){
         helpBox.style.display="block"
-        helpTExt.innerHTML="Your num is LOW KEEP TRYING !"
+        helpTExt.innerHTML="NUM is LOW KEEP TRYING !"
         showHelp();
         displayMsg(` num is TOO low `)
         
     }
     else if( guess >randomNum){
         helpBox.style.display="block"
-        helpTExt.innerHTML="Your num is HIGH KEEP TRYING !"
+        helpTExt.innerHTML="NUM is HIGH KEEP TRYING !"
         showHelp();
         displayMsg(` num is TOO high `)
         
@@ -122,7 +122,7 @@ function newGame(){
 hintButtton.addEventListener('click',()=>{
     event.preventDefault();
     hintButtton.innerHTML=`${randomNum}`
-    console.log('hint running');
+    
 }
 )
 
@@ -132,12 +132,12 @@ function won() {
     let hidWrapper = document.getElementsByClassName("wrapper")
     let congratsDiv = document.getElementById("congrats");
     congratsDiv.style.display = "block";
-    console.log("won is running");
+
     setTimeout(function() {
        
         congratsDiv.style.display = "none";
 
-    }, 5000); // Hide after 5 seconds
+    }, 20000); // Hide after 20 seconds
 }
 
 function showHelp(){
@@ -145,6 +145,6 @@ function showHelp(){
         helpBox.style.display="none"
         
 
-    }, 3000); 
+    }, 4000); 
 }
 
