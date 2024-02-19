@@ -71,21 +71,29 @@ html {
   
   
   
+   
+  
   #wrapper {
-  background-color: rgba(33, 33, 33, 0.5); /* Adjust opacity for better readability */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust shadow for better visibility */
-  text-align: center;
-  max-width: 90%; /* Adjust maximum width for better responsiveness */
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 20px;
-}
-
+    background-color: transparent;
+    box-shadow: #b1a795 0px 0px 123px 14px;
+    box-sizing: border-box;
+    text-align: center;
+    width: 450px;
+    height: 650px;
+    background-color:transparent;
+    color: #fff;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: auto;
+  }
+  
   h2 {
-  color: #fff;
-  font-size: 24px; /* Adjust font size for better readability */
-  margin-top: 0;
-}
+    /* background-color: #161616; */
+  
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
 
 p {
   color: #fff;
